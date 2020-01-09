@@ -1,1 +1,20 @@
 // Mixins in here
+
+.center(){
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.custLay(@just; @align; @flow; @wrap){
+    display: flex;
+    justify-content: @just;
+    align-content: @align;
+    flex-direction: @flow;
+    flex-wrap: @wrap;
+
+}
+
+.addBorder(@sd; @col){
+    border: 2px @sd @col;
+}
