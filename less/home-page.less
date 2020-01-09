@@ -1,5 +1,32 @@
 .home {
 
+  header{
+    
+    
+    .custLay(flex-start, flex-start, column, nowrap);
+    @media @mobile{
+      .center();
+    }
+    
+    h1{
+      .custLay(flex-start, center, row, nowrap);
+      @media @mobile{
+        .center();
+      }
+    }
+    
+    .funNav{
+      .custLay(space-between, flex-end, row, nowrap);
+      @media @mobile{
+        .custLay(center, center, column, nowrap);
+      }
+
+      @media @mobile{
+        .custLay(center, center, column, nowrap);
+      }
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
