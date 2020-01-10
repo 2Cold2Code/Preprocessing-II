@@ -18,3 +18,11 @@
 .addBorder(@sd; @col){
     border: 2px @sd @col;
 }
+
+.btn(@width, @display, @borLin, @col, @bg, @color){
+    width: @width;
+    display: @display;
+    .addBorder(@borLin, @col);
+    background-color: @bg;
+    color: @color;
+}
